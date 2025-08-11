@@ -114,5 +114,4 @@ Note: AI tools are available only if an AI provider key is configured.
 ### License
 
 MIT
-
-Let’s build something crazy with MCP.
+By Efi Kuta
