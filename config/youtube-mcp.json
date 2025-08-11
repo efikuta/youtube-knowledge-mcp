@@ -1,0 +1,18 @@
+{
+  "caching": {
+    "transcripts": 86400,
+    "videoDetails": 3600,
+    "searchResults": 1800,
+    "comments": 7200
+  },
+  "quotaManagement": {
+    "dailyLimit": 8000,
+    "reserveBuffer": 1000,
+    "prioritizeRecent": true
+  },
+  "features": {
+    "enableCommentAnalysis": true,
+    "enableTranscriptExtraction": true,
+    "enableTrendingDiscovery": true
+  }
+}

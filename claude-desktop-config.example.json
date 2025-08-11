@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "youtube-knowledge": {
+      "command": "node",
+      "args": ["/Users/efikuta/Documents/Projects.tmp/tester/youtube-knowledge-mcp/build/index.js"],
+      "env": {
+        "YOUTUBE_API_KEY": "your_api_key_here"
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "name": "youtube-knowledge-mcp",
+  "version": "1.0.0",
+  "description": "Transform YouTube into a queryable knowledge source for AI assistants",
+  "type": "module",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "start": "node build/index.js",
+    "build": "tsup",
+    "test": "vitest",
+    "test:api": "vitest run tests/integration/api.test.ts",
+    "test:mcp": "vitest run tests/integration/mcp.test.ts",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "inspector": "npx @modelcontextprotocol/inspector",
+    "clean": "rm -rf build"
+  },
+  "keywords": [
+    "mcp",
+    "youtube",
+    "api",
+    "ai",
+    "claude",
+    "model-context-protocol",
+    "knowledge-extraction"
+  ],
+  "author": "YouTube Knowledge MCP",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.1",
+    "googleapis": "^140.0.1",
+    "google-auth-library": "^9.14.1",
+    "ioredis": "^5.4.1",
+    "zod": "^3.23.8",
+    "winston": "^3.14.2",
+    "dotenv": "^16.4.5",
+    "axios": "^1.7.7",
+    "openai": "^4.69.0",
+    "@anthropic-ai/sdk": "^0.58.0",
+    "gpt-tokenizer": "^2.8.0",
+    "tiktoken": "^1.0.17"
+  },
+  "devDependencies": {
+    "typescript": "~5.3.3",
+    "@types/node": "^20.16.10",
+    "tsx": "^4.19.1",
+    "vitest": "^2.1.2",
+    "@vitest/coverage-v8": "^2.1.2",
+    "eslint": "^9.12.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.3.0",
+    "@modelcontextprotocol/inspector": "^0.16.2",
+    "supertest": "^7.0.0",
+    "@types/supertest": "^6.0.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/youtube-knowledge-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/youtube-knowledge-mcp/issues"
+  },
+  "homepage": "https://github.com/yourusername/youtube-knowledge-mcp#readme"
+}
